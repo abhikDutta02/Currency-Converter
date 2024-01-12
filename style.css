@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Klee One', cursive;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E58C8A;
+    min-height: 100vh;
+}
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+    border-radius: 1.2rem;
+    min-height: 45vh;
+    width: 20rem;
+}
+.amount p{
+    padding: 1rem 0 0.3rem 0;
+}
+form{
+    border: 2rem 0 2rem 0;
+}
+form input, button, select{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+form input{
+    border: 2px solid #00000052;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+    margin-top: 0.2rem
+}
+.dropdown{
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    margin: 0.5rem 0 1.2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    margin-top: 1.3rem;
+}
+.select-container{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.132);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 6.5rem;
+    padding-top: 0.1rem;
+}
+.select-container img{
+    max-width: 2.5rem;
+    padding-left: 0.3rem;
+}
+.select-container select{
+    width: auto;
+}
+.btn{
+    height: 2rem;
+    background-color: #f0acb5;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.msg{
+    margin: 1rem 0 2rem 0;
+}
+
+/* CSS HEX
+--maize: #fff07cff;
+--screamin-green: #80ff72ff;
+--electric-blue: #7ee8faff;
+--tea-rose-red: #eec0c6ff;
+--light-coral: #e58c8aff; */
