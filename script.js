@@ -1,5 +1,8 @@
 console.log('hello');
-const BASE_URL="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+// const BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@latest/currencies";
+const BASE_URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
+
+
 const dropdowns=document.querySelectorAll('.dropdown select');
 const fromCurr=document.querySelector('#from');
 const toCurr=document.querySelector('#to');
@@ -42,10 +45,12 @@ btn.addEventListener('click',async (evt)=>{
         // amt=1;
         inputVal.value='1';
     }
-    const URL=`${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    // const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    const URL=`${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
+    
     let response = await fetch(URL);
     let data=await response.json();
-    let rate=data[toCurr.value.toLowerCase()];
+    let rate=data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
     let finalVal=rate*amt;
     msg.innerText=`${amt} ${fromCurr.value}=${finalVal} ${toCurr.value}`;
 
